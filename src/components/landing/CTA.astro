@@ -1,0 +1,50 @@
+---
+import AboutImage from "../assets/AboutImage.astro";
+import aboutUs from "../../config/aboutUs.json";
+import AcademyCap from "../icons/academyCap.astro";
+---
+
+<div class="relative p-5 from-lightergreen bg-gradient-to-b to-darkgreen">
+    <div
+        class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-12 lg:items-center max-w-7xl m-auto"
+        id="CTA"
+    >
+        <div class="lg:col-start-2 md:p-20 wrap pb-16">
+            <h4
+                class="text-3xl font-extrabold leading-8 tracking-tight text-white sm:leading-9 text-center md:text-left"
+            >
+                Alcanzá todo eso que estás buscando
+            </h4>
+            {
+                aboutUs.map((about) => (
+                    <ul class="mt-10">
+                        <li class="mt-10">
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center w-12 h-12 text-white bg-tom-thumb-400 rounded-md border-2 border-tom-thumb-200 shadow-xl">
+                                        <AcademyCap />
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h5 class="font-semibold leading-6 text-white text-2xl">
+                                        {about.title}
+                                    </h5>
+                                    <p class=" text-lg mt-2  leading-6 text-white">
+                                        {about.description}
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                ))
+            }
+            <a
+                href="#footer"
+                class="px-4 py-2 absolute m-5 ml-16 text-white uppercase bg-sky-700 border-2 border-transparent rounded-lg text-md hover:bg-sky-800 hover: duration-300 ease-out shadow-xl"
+            >
+                Empezá ahora
+            </a>
+        </div>
+        <AboutImage />
+    </div>
+</div>

@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Niños",
+        "description": "Descubre nuestros cursos de inglés para niños. Ofrecemos cursos para preescolares desde los 4 años, con una frecuencia de 2 clases semanales en clases impartidas por profesores experimentados y altamente capacitados que aportan energía y experiencia a cada clase. En ellos, los niños encienden su imaginación y aprenden más que solo el idioma inglés, expresándose con una confianza que va más allá de sus destrezas lingüísticas: mejorando sus habilidades de creatividad, liderazgo y colaboración que les abren un mundo de posibilidades. Nos centramos en experiencias prácticas y ejercicios interactivos que fomentan la curiosidad y la motivación para practicar el idioma y disfrutar aprendiendo con compañeros de su misma edad. El amor por aprender inglés durará toda la vida.",
+        "image": "/src/assets/classroom4.jpeg"
+    },
+    {
+        "title": "Adolescentes",
+        "description": "Nuestros cursos ofrecen un entorno libre de estrés, donde los profesores motivan a los estudiantes a intentar hablar. A diferencia de la enseñanza frontal clásica, nuestros profesores actúan más como mediadores que guían la conversación mientras los adolescentes hablan entre sí libremente. Junto con sus amigos, tu adolescente discutirá temas que le interesan, se divertirá charlando y ganará confianza para hablar inglés como una persona con sus propios puntos de vista y opiniones. Los contenidos del curso se centran tanto en temas de interés como en la enseñanza de valores. Este aprendizaje dura toda la vida y abre un mundo de oportunidades.",
+        "image": "/src/assets/classroom2.jpeg"
+    },
+    {
+        "title": "Adultos",
+        "description": "Ya sea que quieras acelerar tu carrera, prepararte para estudiar, mejorar tu vida social, o mudarte al extranjero, nuestros cursos presenciales y online te ayudarán a alcanzar tus objetivos. Nuestros cursos son dinámicos y altamente funcionales, con clases de inglés atractivas e interactivas. Te damos las bases para desarrollar confianza al utilizar el idioma en las situaciones que te interesen, y a eso agregamos la mayor flexibilidad horaria y múltiples frecuencias diarias para proveerte clases que se adecuan a tu ritmo de vida. Contamos con vasta experiencia en la enseñanza del idioma y con la confianza de cientos de estudiantes cada año.",
+        "image": "/src/assets/classroom3.jpeg"
+    }
+]

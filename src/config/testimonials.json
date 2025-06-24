@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Sebastian P",
+        "testimonial": "Tremendo lugar donde pude aprender un idioma que me costaba mucho",
+        "src": "../assets/classroom.jpg"
+    },
+    {
+        "name": "Valentín B",
+        "testimonial": "Muy buen instituto, la mejor profe se encuentra aquí",
+        "src": "../assets/classroom.jpg"
+    },
+    {
+        "name": "Renzo F",
+        "testimonial": "Me encantó haber estudiado en esta academia que me preparo al mundo",
+        "src": "../assets/classroom.jpg"
+    }
+]

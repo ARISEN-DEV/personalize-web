@@ -1,0 +1,48 @@
+<main class="md:px-32 p-10 py-20 text-neutral-50" id="aboutus">
+    <h2 class="text-4xl text-center mb-10 font-semibold">Sobre Nosotros</h2>
+    <section
+        class="md:flex gap-10 md:text-xl text-md text-ellipsis text-center md:text-left"
+    >
+        <p
+            class="animate-fade-right animate-once animate-duration-1000 animate-ease-out"
+        >
+            Somos un equipo docente abocado a la enseñanza a través de un <span
+                class="text-blue-400"
+                >método comunicativo, práctico y entretenido</span
+            > que apunta a la puesta en práctica del idioma en contextos realistas
+            y funcionales, cubriendo todos los matices y aspectos culturales del
+            mismo de forma natural y espontánea.
+        </p>
+        <br />
+        <p
+            class="animate-fade-left animate-once animate-duration-1000 animate-ease-out"
+        >
+            Creamos motivación e independencia en el alumno a través de una
+            <span class="text-blue-400">
+                dinámica de clase colaborativa y uso de estrategias de
+                aprendizaje</span
+            >, generando un ambiente cómodo en nuestras clases que se traduce en
+            un vínculo social tanto entre los alumnos como entre padres y el
+            cuerpo docente.
+        </p>
+    </section>
+</main>
+
+<style>
+    main p {
+        animation: reveal linear both;
+        animation-timeline: view();
+        animation-range: entry 10% cover 35%;
+    }
+
+    @keyframes reveal {
+        from {
+            opacity: 0;
+            translate: 0 50px;
+        }
+        to {
+            opacity: 1;
+            translate: 0 0;
+        }
+    }
+</style>

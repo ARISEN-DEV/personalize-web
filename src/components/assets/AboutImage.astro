@@ -1,0 +1,105 @@
+---
+import { Image } from "astro:assets";
+import classroom from "../../assets/classroom.jpeg";
+import classroom1 from "../../assets/classroom1.jpeg";
+import classroom2 from "../../assets/classroom2.jpeg";
+import classroom3 from "../../assets/classroom3.jpeg";
+import classroom4 from "../../assets/classroom4.jpeg";
+---
+
+<section class="relative my-10 mx-auto lg:mt-0 max-w-2xl drop-shadow-2xl drop-shadow-black">
+   <!--  <svg
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        class="absolute opacity-70 -translate-y-28 lg:block hidden rotate-180"
+        viewBox="0 0 700 700"
+        width="500"
+        height="500"
+        ><defs></defs><g id="two-0" transform="matrix(1 0 0 1 0 0)" opacity="1"
+            ><path
+                transform="matrix(1 0 0 1 350 350)"
+                id="two-16"
+                d="M 234.092753 68.735834 C 229.746339 98.464142 161.662014 68.22502 146.70699 94.282858 C 128.875067 125.353445 196.507181 172.610881 172.968323 199.616086 C 154.203316 221.144438 112.303186 177.241891 86.925545 190.340394 C 58.481554 205.021574 66.624234 257.921164 39.535225 274.973533 C 17.205081 289.030225 -14.112321 276.511052 -40.262481 280.031705 C -72.588197 284.383787 -112.493178 321.561377 -137.046373 300.089695 C -175.534787 266.431714 -86.956854 178.421052 -126.109849 145.538523 C -168.806759 109.679647 -257.708078 231.822496 -290.05454 186.406733 C -318.654693 146.250943 -195.930404 108.892011 -208.518346 61.22651 C -219.753309 18.6842 -316.387304 42.710322 -326.965626 0 C -334.671133 -31.111239 -294.604196 -57.52417 -271.474599 -79.712135 C -250.561577 -99.773764 -208.366088 -100.031735 -197.379562 -126.848142 C -179.723412 -169.94407 -266.795468 -237.049789 -229.078686 -264.370896 C -182.353992 -298.217112 -135.424274 -160.000459 -79.440918 -173.951346 C -52.059178 -180.774795 -60.365441 -233.888396 -35.563352 -247.348542 C -15.030069 -258.491997 13.637804 -253.72848 35.181302 -244.691335 C 57.572256 -235.298696 64.719403 -198.136336 88.674453 -194.169969 C 135.833165 -186.361645 183.308499 -284.505512 220.419598 -254.377778 C 255.038372 -226.273377 178.703496 -165.505414 190.709573 -122.561601 C 197.111817 -99.661802 243.601765 -94.280011 240.709407 -70.67866 C 235.368222 -27.095122 128.298219 -43.908402 127.973743 -0.000001 C 127.665421 41.722476 240.128766 27.451132 234.092753 68.735834 Z "
+                fill="hsl(50, 0%, 100%)"
+                stroke="undefined"
+                stroke-width="1"
+                stroke-opacity="1"
+                fill-opacity="1"
+                visibility="visible"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-miterlimit="4"></path></g
+        ></svg
+    > -->
+    <div class="">
+        <Image
+            src={classroom1}
+            alt="clase de ingles"
+            format="webp"
+            height={700}
+            class="relative mx-auto rounded-3xl shadow-2xl duration-300 ease-out slideshow fade image border-2 border-neutral-100"
+        />
+    </div>
+    <div class="">
+        <Image
+            src={classroom3}
+            alt="clase de ingles"
+            format="webp"
+            height={700}
+            class="relative mx-auto rounded-3xl shadow-2xl duration-300 ease-out slideshow fade image border-2 border-neutral-100"
+        />
+    </div>
+    <div class="">
+        <Image
+            src={classroom4}
+            alt="clase de ingles"
+            format="webp"
+            height={700}
+            class="relative mx-auto rounded-3xl shadow-2xl duration-300 ease-out slideshow fade image border-2 border-neutral-100"
+        />
+    </div>
+</section>
+
+<style>
+    .slideshow {
+        display: none;
+    }
+    .fade {
+        animation-name: fade;
+        animation-duration: 2s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: 0.8;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+</style>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("slideshow");
+        let images = document.getElementsByClassName("image");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+        for (i = 0; i < images.length; i++) {
+            images[i].className = images[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        images[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+</script>

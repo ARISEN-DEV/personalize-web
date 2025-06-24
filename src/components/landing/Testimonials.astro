@@ -1,0 +1,29 @@
+---
+import testimonials from "../../config/testimonials.json";
+import ReviewStars from "../assets/ReviewStars.astro";
+---
+
+<main
+    class="flex flex-col items-center w-full gap-4 p-8 md:flex-row md:mb-0 flex-between py-20 "
+
+>
+    {
+        testimonials.map((testimonial) => (
+            <section class="bg-lightgreen   mx-auto rounded-xl md:p-9 p-4 border-2 border-white shadow-xl drop-shadow-2xl drop-shadow-black max-w-sm ">
+                <p class="text-neutral-900 font-semibold">
+                    <span class="text-lg font-bold text-white"> “</span>
+                    <span class="text-white">{testimonial.testimonial}</span>
+                    <span class="text-lg font-bold text-white"> ”</span>
+                </p>
+                <div class="flex items-center mt-4">
+                    <div class="flex flex-col justify-between ml-2">
+                        <ReviewStars />
+                        <span class="py-1 bottom-5 text-sm font-semibold text-white">
+                            {testimonial.name}
+                        </span>
+                    </div>
+                </div>
+            </section>
+        ))
+    }
+</main>

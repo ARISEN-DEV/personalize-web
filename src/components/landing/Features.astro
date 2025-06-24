@@ -1,0 +1,48 @@
+---
+import features from "../../config/features.json";
+import AcademyCapIcon from "../icons/academyCap.astro";
+---
+
+<main class="py-20">
+  <h2 class="text-4xl font-bold text-center text-neutral-200 mb-12">Nuestros Servicios</h2>
+>
+    <section class="container mx-auto px-4 grid gap-8 md:grid-cols-2">
+    {
+        features.map((feature) => (
+                <div class="bg-sky-950 rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300">
+      <div class="mb-4">
+        <svg class="w-10 h-10 text-lightergreen" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+      <h3 class="text-xl font-semibold text-neutral-200 mb-2">{feature.title}</h3>
+      <p class="text-sm text-neutral-300 leading-relaxed text-justify">
+        {feature.description}
+
+      </p>
+    </div>
+        ))
+    }
+    </section>
+</main>
+
+
+       
+        <style>
+    main section {
+        animation: reveal linear both;
+        animation-timeline: view();
+        animation-range: entry 10% cover 35%;
+    }
+
+    @keyframes reveal {
+        from {
+            opacity: 0;
+            translate: 0 50px;
+        }
+        to {
+            opacity: 1;
+            translate: 0 0;
+        }
+    }
+</style>

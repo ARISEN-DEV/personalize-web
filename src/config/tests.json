@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Test Basico",
+        "description": "Si nunca estudiaste inglés o si solo tenes nociones básicas, testeá tus conocimientos en esta prueba",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSd1TssV_A85F5sT5PclG2CW16YLEKO_-raHeO228xPhtUZBXw/viewform",
+        "isAvailable": true
+    },
+    {
+        "title": "Test Avanzado",
+        "description": "Si tenés conocimientos previos en Ingles y sentís que tenes un nivel intermedio, probá acá",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSdX5whH9RpVEiCxcOk21Tnoc2Sht1tSv-PR8txXxt74CmzWWw/viewform",
+        "isAvailable": false
+    }
+]

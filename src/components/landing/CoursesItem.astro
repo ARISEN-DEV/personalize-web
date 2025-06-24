@@ -1,0 +1,109 @@
+<h2 class="text-center m-auto text-3xl font-semibold text-neutral-50">Examenes</h2>
+<section
+    class="grid md:grid-cols-2 mx-auto mt-10 rounded-xl text-neutral-200 [&_h3]:font-bold [&_a]:cursor-pointer [&_a]:active:underline max-w-xl [&_article]:drop-shadow-md [&_article]:drop-shadow-black"
+>
+    <article
+        class="flex p-2 bg-gradient-to-br from-sky-950 to-lightergreen bg-lightgreen text-neutral-200 m-1 rounded-md shadow-lg"
+    >
+        <h3 class="p-4 text-2xl">B1</h3>
+        <div class="my-auto grid">
+            <a
+                href="https://www.cambridgeenglish.org/es/exams-and-tests/preliminary/"
+                >Cambridge PET</a
+            >
+            <a href="https://www.anglia.org/exams/intermediate-b1-cefr"
+                >Anglia Intermediate Exam</a
+            >
+        </div>
+    </article>
+    <article
+        class="flex p-2 bg-gradient-to-bl from-sky-950 to-lightergreen m-1 rounded-md shadow-lg md:text-left md:justify-normal md:flex-row text-right flex-row-reverse justify-stretch"
+    >
+        <h3 class="p-4 text-2xl">B2</h3>
+        <div class="my-auto grid">
+            <a href="https://www.cambridgeenglish.org/es/exams-and-tests/first/"
+                >Cambridge FCE</a
+            >
+            <a href="https://michiganassessment.org/michigan-tests/ecce/"
+                >Michigan ECCE</a
+            >
+            <a href="https://www.anglia.org/exams/advanced"
+                >Anglia Advanced Exam</a
+            >
+        </div>
+    </article>
+    <article
+        class="flex p-2 bg-gradient-to-br from-sky-950 to-lightergreen bg-lightgreen text-neutral-200 m-1 rounded-md shadow-lg"
+    >
+        <h3 class="p-4 text-2xl">C1</h3>
+        <div class="my-auto grid">
+            <a
+                href="https://www.cambridgeenglish.org/es/exams-and-tests/advanced/"
+                >Cambridge CAE</a
+            >
+            <a href="https://www.anglia.org/anglia-proficiency-exam-c1-cefr"
+                >Anglia Proficiency Exam</a
+            >
+        </div>
+    </article>
+    <article
+        class="flex p-2 bg-gradient-to-bl from-sky-950 to-lightergreen m-1 rounded-md shadow-lg md:text-left md:justify-normal md:flex-row text-right flex-row-reverse justify-stretch"
+    >
+        <h3 class="p-4 text-2xl">C2</h3>
+        <div class="my-auto grid">
+            <a
+                href="https://www.cambridgeenglish.org/es/exams-and-tests/proficiency/"
+                >Cambridge CPE</a
+            >
+            <a href="https://michiganassessment.org/michigan-tests/ecpe/"
+                >Michigan ECPE</a
+            >
+            <a href="https://www.anglia.org/mastery-exam-c2"
+                >Anglia Mastery Exam</a
+            >
+        </div>
+    </article>
+    <article class="flex p-2 bg-gradient-to-br from-sky-950 to-lightergreen bg-lightgreen m-1 rounded-md text-neutral-200 shadow-lg md:text-left">
+        <h3 class="p-4 text-2xl">TOEFL</h3>
+        <div class="my-auto grid">
+            <a href="https://www.ets.org/toefl/test-takers/ibt.html">iBT</a>
+            <a href="https://www.ets.org/toefl/test-takers/essentials.html"
+                >Essentials</a
+            >
+        </div>
+    </article>
+    <article
+        class="flex p-2 bg-gradient-to-bl from-sky-950 to-lightergreen m-1 rounded-md shadow-lg md:text-left md:justify-normal md:flex-row text-right flex-row-reverse justify-stretch"
+    >
+        <h3 class="p-4 text-2xl">IELTS</h3>
+        <div class="my-auto grid">
+            <a
+                href="https://ielts.org/take-a-test/test-types/ielts-academic-test"
+                >Academic</a
+            >
+            <a
+                href="https://ielts.org/take-a-test/test-types/ielts-general-training-test"
+                >General Training
+            </a>
+        </div>
+    </article>
+</section>
+
+<style>
+    section article {
+        animation: reveal linear both;
+        animation-timeline: view();
+        animation-range: entry 10% cover 20%;
+    }
+
+    @keyframes reveal {
+        from {
+            opacity: 0;
+            translate: 0 50px;
+        }
+        to {
+            opacity: 1;
+            translate: 0 0;
+        }
+    }
+</style>

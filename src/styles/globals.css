@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme  {
+  --color-darkgreen: oklch(0.2684 0.0459 229.72);
+  --color-lightgreen: oklch(0.4442 0.0753 225.2);
+  --color-lightergreen: oklch(0.5787 0.133 240.21);
+}
+

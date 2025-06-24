@@ -1,25 +1,30 @@
 ---
-import '../styles/global.css';
-// Component Imports
-import Button from '../components/Button.astro';
+import Layout from "@/layouts/Layout.astro";
+import Hero from "@/components/landing/Hero.astro";
+import CTA from "@/components/landing/CTA.astro";
+import AboutUs from "@/components/landing/AboutUs.astro";
+import Courses from "@/components/landing/Cursos.astro";
+import Features from "@/components/landing/Features.astro";
+import Carrousel from "@/components/landing/Carrousel.astro";
+import Testimonials from "@/components/landing/Testimonials.astro";
+import Counters from "@/components/landing/Counters.astro";
+import Tests from "@/components/landing/Tests.astro";
+import CoursesTypes from "@/components/landing/CoursesItem.astro";
 
-// Full Astro Component Syntax:
-// https://docs.astro.build/basics/astro-components/
+import '@/styles/globals.css'
+import CoursesItem from "@/components/landing/CoursesItem.astro";
+
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro + TailwindCSS</title>
-	</head>
-
-	<body>
-		<div class="grid place-items-center h-screen content-center">
-			<Button>Tailwind Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
-		</div>
-	</body>
-</html>
+<Layout title="Home" meta="Ideas For Communication">
+	<Hero />
+	<CTA />
+	<Counters />
+	<Tests />
+	<AboutUs />
+	<Courses />
+	<Features />
+	<CoursesItem />
+	<Carrousel />
+	<Testimonials />
+</Layout>

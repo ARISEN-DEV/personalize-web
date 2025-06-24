@@ -1,0 +1,64 @@
+---
+import { Image } from "astro:assets";
+
+import hero from "../../assets/hero.webp";
+---
+
+<header>
+    <Image
+        src={hero}
+        alt="Instituto Personalize English"
+        height={1920}
+        widths={[240, 540, 720]}
+        sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px,`}
+        class="m-auto absolute shadow-2xl lg:h-screen landing-section h-screen text-center"
+        
+    />
+</header>
+<section
+    class="relative z-20 flex items-center overflow-hidden lg:h-screen from-lightergreen bg-gradient-to-t from-0% landing-section h-screen text-center"
+    
+>
+    <div class=" relative flex lg:py-16 mx-auto animate-fade-right">
+        <div
+            class="relative z-20 flex flex-col  pt-10 select-none"
+        >
+            <img
+                class="lg:h-full w-full pl-0.5"
+                src="./logo.png"
+                alt="Logo de Personalize"
+            />
+
+            <span
+                class="md:text-4xl text-sm font-semibold uppercase text-neutral-200 font"
+                >Ideas for communication</span
+            >
+            <p
+                class="lg:text-xl text-md mx-auto text-neutral-200 pt-10 font-semibold font max-w-sm"
+            >
+                ¡Reinventate! Estudiá un nuevo idioma, abrí las puertas a nuevos
+                horizontes y a todo lo que siempre deseaste.
+            </p>
+            <div class="flex mt-8 animate-fade-right mx-auto animate-delay-500">
+                <a
+                    href="#footer"
+                    class="px-4 py-2 mr-4 text-white uppercase border-white bg-sky-950 border-2 rounded-lg text-md hover:bg-blue-800 hover: duration-300 ease-out shadow-xl"
+                >
+                    Comenzar
+                </a>
+                <a
+                    href="#CTA"
+                    class="px-4 py-2 uppercase bg-transparent border-2 rounded-lg hover:bg-sky-800 text-md text-white duration-300 ease-out shadow-xl"
+                >
+                    Leer mas
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .font {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+</style>
