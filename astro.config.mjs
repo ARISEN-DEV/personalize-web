@@ -7,6 +7,7 @@ import react from '@astrojs/react';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://arisen-dev.github.io',
+  base: 'persoweb',
   vite: {
       plugins: [tailwindcss()]
 	},
